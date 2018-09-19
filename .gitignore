@@ -1,0 +1,4 @@
+# CROS_WORKON may work in a directory within the distfiles folder where it is
+# going to clone git repositories from third parties. Do not consider this
+# directory as part of the distfiles.
+/git3-src

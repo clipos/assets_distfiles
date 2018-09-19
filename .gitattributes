@@ -1,0 +1,10 @@
+# Consider all distfiles as binary (-text) and store them through Git LFS.
+*                   filter=lfs diff=lfs merge=lfs -text
+
+# Except for some files which must still be considered as text and managed
+# through Git. It is important to exclude .gitattributes and .lfsconfig from
+# LFS to ensure LFS works as intended when cloning the repo.
+/.gitattributes     -filter=lfs -diff=lfs -merge=lfs text
+/.gitignore         -filter=lfs -diff=lfs -merge=lfs text
+/.lfsconfig         -filter=lfs -diff=lfs -merge=lfs text
+/README.md          -filter=lfs -diff=lfs -merge=lfs text
