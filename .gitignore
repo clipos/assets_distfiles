@@ -2,3 +2,5 @@
 # going to clone git repositories from third parties. Do not consider this
 # directory as part of the distfiles.
 /git3-src
+/.layout.conf.distfiles.gentoo.org*
+/.mirror-cache.json
